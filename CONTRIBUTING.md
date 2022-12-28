@@ -2,10 +2,10 @@
 
 We want to make contributing to this project as easy and transparent as
 possible. This file covers information on flagging issues, contributing
-updates to existing tutorials--and also submitting new tutorials.
+updates to existing tutorials,and also submitting new tutorials.
 
 NOTE: This guide assumes that you have your GitHub account properly
-configured, such as having an SSH key. If this is your first time
+configured, such as with an SSH key. If this is your first time
 contributing on GitHub, see the [GitHub
 Documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
 on contributing to projects.
@@ -28,7 +28,7 @@ issue.
 # Contributor License Agreement ("CLA")
 
 In order to accept a pull request, you need to submit a CLA. You only
-need to do this once and you will be able to work on all of Facebook's
+need to do this once, and you will be able to work on all of Facebook's
 open source projects, not just PyTorch.
 
 Complete your CLA here: <https://code.facebook.com/cla>
@@ -43,11 +43,11 @@ this source tree.
 
 # Updates to existing tutorials
 
-We welcome your pull requests (PR) for updates and fixes.
+We welcome your pull requests (PRs) for updates and fixes.
 
 1. If you haven't already, complete the Contributor License Agreement
    ("CLA").
-1. Fork the repo and create a branch from
+1. Fork the repository and create a branch from
    [`master`](https://github.com/pytorch/tutorials).
 1. Test your code.
 1. Lint your code with a tool such as
@@ -63,14 +63,14 @@ There are three types of tutorial content that we host on
 * **Interactive tutorials** are authored and submitted as Python files.
   The build system  converts these into Jupyter notebooks and HTML. The
   code in these tutorials is run every time they are built. To keep
-  these tutorials up and running all their package dependencies need to
-  be resolved--which makes it more challenging to maintain this type of
+  these tutorials up and running, all their package dependencies need to
+  be resolved,which makes it more challenging to maintain this type of
   tutorial. 
 
 * **Non-interactive tutorials** are authored and submitted as
   reStructuredText files. The build system only converts them into HTML;
   the code in them does not run on build. These tutorials are easier to
-  create and maintain but they do not provide an interactive experience.
+  create and maintain, but they do not provide an interactive experience.
   An example is the [Dynamic Quantization
   tutorial](https://pytorch.org/tutorials/recipes/recipes/dynamic_quantization.html).
 
@@ -80,7 +80,7 @@ There are three types of tutorial content that we host on
   non-interactive.
 
 
-# Managing data that is used by your tutorial 
+# Managing the data that is used by your tutorial 
 
 Your tutorial might depend on external data, such as pre-trained models,
 training data, or test data. We recommend storing this data in a
@@ -93,13 +93,13 @@ that we use to build the tutorials contains automation that downloads
 required data files.
 
 
-# Python packages used by your tutorial
+# Python packages used in your tutorial
 
 If your tutorial has dependencies that are not already defined in
 `requirements.txt`, you should add them to that file. We recommend that
 you use only mature, well-supported packages in your tutorial. Packages
 that are obscure or not well-maintained may break as a result of, for
-example, updates to Python or PyTorch or other packages. If your
+example, updates to Python, PyTorch, or other packages. If your
 tutorial fails to build in our Continuous Integration (CI) system, we
 might contact you in order to resolve the issue.
 
@@ -107,17 +107,17 @@ might contact you in order to resolve the issue.
 # Deprecation of tutorials 
 
 Under some circumstances, we might deprecate--and subsequently
-archive--a tutorial removing it from the site. For example, if the
+archive--a tutorial, removing it from the site. For example, if the
 tutorial breaks in our CI and we are not able to resolve the issue and
 are also not able to reach you, we might archive the tutorial. In these
-situations, resolving the breaking issue would normally be sufficient to
+situations, resolving the broken issue would normally be sufficient to
 make the tutorial available again.
 
 Another situation in which a tutorial might be deprecated is if it
-consistently receives low ratings--or low usage--by the community. Again,
+consistently receives low ratings or low usage by the community. Again,
 if this occurs, we will attempt to contact you.
 
-If we identify, or suspect, that your tutorial--or a package that your
+If we identify or suspect that your tutorial -- or a package that your
 tutorial uses--has a **security or privacy** issue, we will immediately
 take the tutorial off the site.
 
@@ -132,8 +132,8 @@ taking into account how much support you can provide to keep the
 tutorial up-to-date. Ideally, your tutorial should demonstrate PyTorch
 functionality that is not duplicated in other tutorials.
 
-As described earlier, tutorials are resources that provide a holistic
-end-to-end understanding of how to use PyTorch. Recipes are scoped
+As described earlier, tutorials are resources that provide a holistic,
+end-to-end understanding of how to use PyTorch. Recipes are specific
 examples of how to use specific features; the goal of a recipe is to
 teach readers how to easily leverage features of PyTorch for their
 needs. Tutorials and recipes are always _actionable_. If the material is
@@ -143,7 +143,7 @@ View our current [full-length tutorials](https://pytorch.org/tutorials/).
 
 To create actionable tutorials, start by identifying _learning
 objectives_, which are the end goals. Working backwards from these
-objectives will help to eliminate extraneous information.
+objectives will help eliminate extraneous information.
 
 
 ## Learning objectives ##
@@ -169,7 +169,7 @@ Write for a global audience with an instructive and directive voice.
 - For a short guide on the essentials of writing style, 
   [The Elements of Style](https://www.gutenberg.org/files/37134/37134-h/37134-h.htm)
   is invaluable.
-- For extensive guidance on technical-writing style, the Google developer documentation 
+- For extensive guidance on technical-writing style,see the Google developer documentation 
   [google style](https://developers.google.com/style)
   is a great resource.
 - Think of the process as similar to creating a (really practical)
@@ -178,7 +178,7 @@ Write for a global audience with an instructive and directive voice.
 
 ## Structure ##
 
-We recommend that tutorials use the following structure which guides users through the learning experience and provides appropriate context:
+We recommend that tutorials use the following structure, which guides users through the learning experience and provides appropriate context:
 
 1. Introduction
 1. Motivation: Why is this topic important?
@@ -201,7 +201,7 @@ We recommend that tutorials use the following structure which guides users throu
    helps readers have context for the tutorial source code and better
    understand how and why it implements the technique you’re
    demonstrating.
-1. Recap/Conclusion: Summarize the steps and concepts covered. Highlight
+1. Recap/Conclusion: Summarize the steps and concepts covered. Highlight the
    key takeaways.
 1. (Optional) Additional practice exercises for users to test their
    knowledge. An example is [NLP From Scratch: Generating Names with a
@@ -240,7 +240,7 @@ is one option for performing this conversion.
 For Python files, our CI system runs your code during each build.
 
 
-## Add Your Tutorial Code ##
+## Insert Your Tutorial Code ##
 
 1. [Fork and
    clone](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
@@ -254,7 +254,7 @@ For Python files, our CI system runs your code during each build.
    based on the technical level of the content. For recipes, put the
    recipe in
    [`recipes_source`](https://github.com/pytorch/tutorials/tree/master/recipes_source).
-   In addition, for recipes, add the recipe in the recipes
+   In addition, for recipes, add the recipe to the recipes
    [README.txt](https://github.com/pytorch/tutorials/blob/master/recipes_source/recipes/README.txt)
    file.
 
@@ -302,14 +302,14 @@ might fail to build, and the cards will not display properly.
 Add a thumbnail to the
 [`_static/img/thumbnails/cropped`](https://github.com/pytorch/tutorials/tree/master/_static/img/thumbnails/cropped)
 directory. Images that render the best are square--that is, they have
-equal `x` and `y` dimensions--and also have high resolution. [Here is an
+equal `x` and `y` dimensions--and also have a high resolution. [Here is an
 example](https://github.com/pytorch/tutorials/blob/master/_static/img/thumbnails/cropped/loading-data.PNG).
 
 ## `toctree` ##
 
 1. Add your tutorial under the corresponding toctree (also in
    `index.rst`). For example, if you are adding a tutorial that
-   demonstrates the PyTorch ability to process images or video, add it
+   demonstrates PyTorch's ability to process images or video, add it
    under `Image and Video`:
 
 ```
@@ -356,8 +356,8 @@ Submit the changes as a PR to the master branch of
     ```
 
 1. Submit the PR and tag individuals on the PyTorch project who can review
-   your PR.
-1. Address all feedback comments from your reviewers.
+   it.
+1. Address all feedback and comments from your reviewers.
 1. Make sure all CI checks are passing.
 
 Once you submit your PR, you can see a generated Netlify preview of your
